@@ -14,6 +14,14 @@
 #include <sys/wait.h>
 #include <fcntl.h>
 #include <fstream>
+
+
+// AES Libs
+#include"class_decrypt.cpp"
+#include"class_encrypt.cpp"
+
+
+
 using namespace std;
 
 
