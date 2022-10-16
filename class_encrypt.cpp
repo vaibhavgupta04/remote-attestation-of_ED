@@ -133,15 +133,24 @@ class Encrypt {
         }
     }
 
+   public:
+    Encrypt(char msg[1024]) {
+        strncpy(message, msg, 1024);
+    }
+
     void DoEncrypt() {
         cout << "=============================" << endl;
         cout << " 128-bit AES Encryption Tool   " << endl;
         cout << "=============================" << endl;
+        cout << endl;
+        cout << endl;
+        cout << endl;
 
-        char message[1024];
+        // * Class data member is used not the local one.
+        // char message[1024];
+        // cout << "Enter the message to encrypt: ";
+        // cin.getline(message, sizeof(message));
 
-        cout << "Enter the message to encrypt: ";
-        cin.getline(message, sizeof(message));
         cout << message << endl;
 
         // Pad message to 16 bytes
@@ -216,5 +225,9 @@ class Encrypt {
         // Free memory
         delete[] paddedMessage;
         delete[] encryptedMessage;
+
+        cout << endl;
+        cout << endl;
+        cout << endl;
     }
 };

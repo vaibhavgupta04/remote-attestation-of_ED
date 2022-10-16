@@ -9,7 +9,6 @@ using namespace std;
 
 class Decrypt {
    private:
-
     string msgstr;
     string keystr;
 
@@ -141,6 +140,9 @@ class Decrypt {
         cout << "=============================" << endl;
         cout << " 128-bit AES Decryption Tool " << endl;
         cout << "=============================" << endl;
+        cout << endl;
+        cout << endl;
+        cout << endl;
 
         // Read in the message from message.aes
         string msgstr;
@@ -215,6 +217,9 @@ class Decrypt {
         for (int i = 0; i < messageLen; i++) {
             cout << decryptedMessage[i];
         }
+        cout << endl;
+        cout << endl;
+        cout << endl;
         cout << endl;
     }
 };
